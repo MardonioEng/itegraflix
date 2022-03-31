@@ -1,0 +1,53 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.image-movie {
+  margin-bottom: 4px;
+}
+
+#title-movie {
+  color: #E7E4E4;
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+.details-movie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vote-average-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+#vote-average {
+  color: #FB8200;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 3px;
+}
+
+#release-date-movie {
+  color: #919191;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.vote-count-container {
+  color: #919191;
+  display: flex;
+  align-items: center;
+}
+
+#vote-count {
+  margin-left: 3px;
+  font-size: 16px;
+  font-weight: 400;
+}
