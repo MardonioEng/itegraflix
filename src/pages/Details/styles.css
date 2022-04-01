@@ -1,0 +1,144 @@
+.details-container {
+  background: #2D2B2B;
+  padding: 0px 20px 30px 20px;
+}
+
+#title-movie {
+  color: #E7E4E4;
+  font-size: 20px;
+  padding: 15px 0;
+}
+
+#poster-image {
+  padding: 0 15px;
+}
+
+.average-count-vote {
+  padding: 5px 0;
+  display: flex;
+}
+
+.vote-average-container {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 10px;
+}
+
+#vote-average {
+  color: #FB8200;
+  font-size: 16px;
+  padding-left: 3px;
+}
+
+.vote-count-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+#vote-count {
+  color: #919191;
+  font-size: 16px;
+  padding-left: 3px;
+}
+
+#genres {
+  color: #919191;
+  font-size: 14px;
+}
+
+#production-companies {
+  color: #919191;
+  font-size: 14px;
+}
+
+#overview {
+  color: #E7E4E4;
+  font-size: 14px;
+}
+
+.actors {
+  display: flex;
+}
+
+.image-actor {
+  padding: 0 6px;
+  padding-bottom: 3px;
+}
+
+.actor-name {
+  color: #919191;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .details-container {
+    padding: 0px 30px 30px 30px;
+  }
+  #poster-image {
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .details-container {
+    padding: 0px 50px 30px 50px;
+  }
+  #poster-image {
+    padding: 0 80px;
+  }
+  .image-actor {
+    padding: 0 20px;
+    padding-bottom: 6px;
+  }
+}
+
+@media (min-width: 992px) {
+  .details-container {
+    padding: 0px 90px 30px 90px;
+  }
+  #poster-image {
+    padding: 0 120px;
+  }
+  .image-actor {
+    padding: 0 40px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .details-container {
+    padding: 0px 130px 30px 130px;
+    height: calc(100vh - 100px);
+  }
+  .details-movie-container {
+    display: flex;
+  }
+  #poster-image {
+    width: 600px;
+    padding: 0;
+  }
+  .content-details {
+    padding-left: 20px;
+  }
+  .actors {
+    width: 350px;
+  }
+  #genres {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  #production-companies {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  #overview {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .image-actor {
+    padding: 0 6px;
+    padding-bottom: 10px;
+  }
+}
