@@ -1,5 +1,4 @@
 import React from "react";
-import ImagePng from "../../assets/images/homemaranha.jpg";
 import StarPng from "../../assets/images/Icon-star-yellow.png";
 import HeartPng from "../../assets/images/Icon-heart-gray.png";
 import "./styles.css";
