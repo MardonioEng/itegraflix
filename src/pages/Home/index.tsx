@@ -12,7 +12,7 @@ const Home = () => {
 		setIsLoading(true);
 		axios
 			.get(
-				`https://api.themoviedb.org/3/movie/popular?api_key=433dc74e073c071d4743d1c63e3df50e&language=pt-BR&page=1`
+				`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_API}&language=pt-BR&page=1`
 			)
 			.then((response) => {
 				setDados(response.data.results.slice(0, 10));

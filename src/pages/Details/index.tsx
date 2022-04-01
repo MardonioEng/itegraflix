@@ -22,7 +22,7 @@ const Details = () => {
 		setIsLoading(true);
 		axios
 			.get(
-				`https://api.themoviedb.org/3/movie/${movieId}?api_key=433dc74e073c071d4743d1c63e3df50e&language=pt-BR`
+				`https://api.themoviedb.org/3/movie/${movieId}?api_key=${process.env.REACT_APP_API}&language=pt-BR`
 			)
 			.then((response) => {
 				setMovie(response.data);
@@ -35,7 +35,7 @@ const Details = () => {
 
 		axios
 			.get(
-				`https://api.themoviedb.org/3/movie/${movieId}/credits?api_key=433dc74e073c071d4743d1c63e3df50e&language=pt-BR`
+				`https://api.themoviedb.org/3/movie/${movieId}/credits?api_key=${process.env.REACT_APP_API}&language=pt-BR`
 			)
 			.then((response) => {
 				setMainActors(response.data.cast.slice(0, 3));
