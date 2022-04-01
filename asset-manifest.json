@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/itegraflix/static/css/main.3f7c13bf.css",
-    "main.js": "/itegraflix/static/js/main.5397880a.js",
+    "main.js": "/itegraflix/static/js/main.2219a8df.js",
     "index.html": "/itegraflix/index.html",
     "main.3f7c13bf.css.map": "/itegraflix/static/css/main.3f7c13bf.css.map",
-    "main.5397880a.js.map": "/itegraflix/static/js/main.5397880a.js.map"
+    "main.2219a8df.js.map": "/itegraflix/static/js/main.2219a8df.js.map"
   },
   "entrypoints": [
     "static/css/main.3f7c13bf.css",
-    "static/js/main.5397880a.js"
+    "static/js/main.2219a8df.js"
   ]
 }
