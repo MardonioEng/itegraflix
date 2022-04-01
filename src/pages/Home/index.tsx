@@ -27,7 +27,9 @@ const Home = () => {
 			<h1 id="home-title">Populares</h1>
 			<div className="row">
 				{isLoading ? (
-					<h1>Carregando</h1>
+					<div className="loader-area">
+						<div className="loader"></div>
+					</div>
 				) : (
 					dados?.map((movie) => (
 						<div className="col-sm-6 col-md-4 col-lg-3" key={movie.id}>

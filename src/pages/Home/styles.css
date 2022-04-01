@@ -47,3 +47,25 @@
     padding-right: 150px;
   } 
 }
+
+.loader-area {
+  display: flex;
+  width: 100vw;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  border: 16px solid #FB8200;
+  border-radius: 50%;
+  border-top: 16px solid #2D2B2B;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

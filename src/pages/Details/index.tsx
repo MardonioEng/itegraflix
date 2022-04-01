@@ -45,7 +45,9 @@ const Details = () => {
 	return (
 		<div className="details-container">
 			{isLoading ? (
-				<h1>Carregando</h1>
+				<div className="loader-area">
+					<div className="loader"></div>
+				</div>
 			) : (
 				<>
 					<h1 id="title-movie">{movie?.title}</h1>
