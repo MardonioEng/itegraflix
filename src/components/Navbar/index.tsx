@@ -7,9 +7,11 @@ const Navbar = () => {
 	return (
 		<nav className="navbar-container">
 			<div id="nav-icon">
-				<img src={Wally} alt="Mascote Wally" />
+				<Link to={`/itegraflix`}>
+					<img src={Wally} alt="Mascote Wally" />
+				</Link>
 			</div>
-			<Link to={`/`}>
+			<Link to={`/itegraflix`}>
 				<h1 id="nav-title">itegraflix</h1>
 			</Link>
 		</nav>

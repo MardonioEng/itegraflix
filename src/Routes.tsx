@@ -7,10 +7,10 @@ const Routes = () => (
   <BrowserRouter>
     <Navbar />
     <Switch>
-      <Route path="/" exact>
+      <Route path="/itegraflix" exact>
         <Home />
       </Route>
-      <Route path="/moviedetails/:movieId">
+      <Route path="/itegraflix/moviedetails/:movieId">
         <Details />
       </Route>
     </Switch>
