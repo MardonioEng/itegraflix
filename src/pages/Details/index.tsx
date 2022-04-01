@@ -4,20 +4,22 @@ import StarPng from "../../assets/images/Icon-star-yellow.png";
 import HeartPng from "../../assets/images/Icon-heart-gray.png";
 import "./styles.css";
 import axios from "axios";
+import { useParams } from "react-router-dom";
+import { spawn } from "child_process";
 
-// type urlParams = {
-//   productId: string;
-// };
+type urlParams = {
+	movieId: string;
+};
 
 const Details = () => {
-	// const { productId } = useParams<urlParams>();
+	const { movieId } = useParams<urlParams>();
 	const [movie, setMovie] = useState<any>();
 	const [genres, setGenres] = useState<any[]>();
 	const [productionCompanies, setProductionCompanies] = useState<any[]>();
 	const [mainActors, setMainActors] = useState<any[]>();
 	const [isLoading, setIsLoading] = useState(false);
 
-	const movieId = 634649;
+	// const movieId = 634649;
 
 	useEffect(() => {
 		setIsLoading(true);
@@ -26,7 +28,7 @@ const Details = () => {
 				`https://api.themoviedb.org/3/movie/${movieId}?api_key=${process.env.REACT_APP_API}&language=pt-BR`
 			)
 			.then((response) => {
-				// console.log(response.data.genres);
+				console.log(response.data);
 				setMovie(response.data);
 				setGenres(response.data.genres);
 				setProductionCompanies(response.data.production_companies);
@@ -43,7 +45,7 @@ const Details = () => {
 				console.log();
 				setMainActors(response.data.cast.slice(0, 3));
 			});
-	}, []);
+	}, [movieId]);
 
 	return (
 		<div className="details-container">
@@ -55,9 +57,10 @@ const Details = () => {
 
 					<div className="details-movie-container">
 						<div id="poster-image">
-							{/* <img src={`https://image.tmdb.org/t/p/w500${movie.belongs_to_collection.
-							poster_path}`} alt="Poster do filme" /> */}
-							<img src={ImagePng} alt="Poster do filme" />
+							<img
+								src={`https://image.tmdb.org/t/p/w500${movie?.poster_path}`}
+								alt="Poster do filme"
+							/>
 						</div>
 
 						<div className="content-details">
@@ -91,17 +94,21 @@ const Details = () => {
 							<p id="overview">{movie?.overview}</p>
 
 							<div className="actors">
-								{mainActors?.map((actor) => (
-									<div className="actor-container" key={actor.id}>
-										<div className="image-actor">
-											<img
-												src={`https://image.tmdb.org/t/p/w500${actor.profile_path}`}
-												alt="Imagem ator1"
-											/>
+								{isLoading ? (
+									<span>l</span>
+								) : (
+									mainActors?.map((actor) => (
+										<div className="actor-container" key={actor.id}>
+											<div className="image-actor">
+												<img
+													src={`https://image.tmdb.org/t/p/w500${actor.profile_path}`}
+													alt="Imagem ator1"
+												/>
+											</div>
+											<h5 className="actor-name">{actor.name}</h5>
 										</div>
-										<h5 className="actor-name">{actor.name}</h5>
-									</div>
-								))}
+									))
+								)}
 							</div>
 						</div>
 					</div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Wally from "../../assets/images/Wally.png";
 import "./styles.css";
 
@@ -8,7 +9,9 @@ const Navbar = () => {
 			<div id="nav-icon">
 				<img src={Wally} alt="Mascote Wally" />
 			</div>
-			<h1 id="nav-title">itegraflix</h1>
+			<Link to={`/`}>
+				<h1 id="nav-title">itegraflix</h1>
+			</Link>
 		</nav>
 	);
 };
