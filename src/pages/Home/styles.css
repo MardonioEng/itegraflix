@@ -1,6 +1,5 @@
 .home-container {
   background: #2D2B2B;
-  /* height: calc(100vh - 100px); */
   height: 100%;
   padding-top: 22px;
   padding-left: 26px;
@@ -11,6 +10,10 @@
 #home-title {
   color: #E7E4E4;
   margin-bottom: 20px;
+}
+
+.movie-card-container:hover {
+  filter: brightness(1.2);
 }
 
 @media (min-width: 576px) {

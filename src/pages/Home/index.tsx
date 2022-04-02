@@ -32,7 +32,7 @@ const Home = () => {
 					</div>
 				) : (
 					dados?.map((movie) => (
-						<div className="col-sm-6 col-md-4 col-lg-3" key={movie.id}>
+						<div className="col-sm-6 col-md-4 col-lg-3 movie-card-container" key={movie.id}>
 							<Link to={`/itegraflix/moviedetails/${movie.id}`}>
 								<MovieCard movie={movie} />
 							</Link>

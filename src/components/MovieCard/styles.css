@@ -11,10 +11,15 @@
   margin-bottom: 4px;
 }
 
+.image-movie img {
+  border-radius: 10px;
+}
+
 #title-movie {
   color: #E7E4E4;
   font-size: 18px;
   margin-bottom: 2px;
+  padding: 5px 0 2px 0;
 }
 
 .details-movie {

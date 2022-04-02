@@ -3,7 +3,7 @@
   padding: 0px 20px 30px 20px;
 }
 
-#title-movie {
+#title-movie-detail {
   color: #E7E4E4;
   font-size: 20px;
   padding: 10px 0;
@@ -12,6 +12,10 @@
 #poster-image {
   min-width: 300px;
   padding: 0 15px;
+}
+
+#poster-image img {
+  border-radius: 10px;
 }
 
 .content-details {
@@ -70,6 +74,10 @@
 .image-actor {
   padding: 0 6px;
   padding-bottom: 3px;
+}
+
+.image-actor img {
+  border-radius: 4px;
 }
 
 .actor-name {

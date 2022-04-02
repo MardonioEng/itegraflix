@@ -50,7 +50,7 @@ const Details = () => {
 				</div>
 			) : (
 				<>
-					<h1 id="title-movie">{movie?.title}</h1>
+					<h1 id="title-movie-detail">{movie?.title}</h1>
 
 					<div className="details-movie-container">
 						<div id="poster-image">
