@@ -1,46 +1,61 @@
-# Getting Started with Create React App
+# [ItegraFlix](https://mardonioeng.github.io/itegraflix/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![GitHub repo size](https://img.shields.io/github/repo-size/MardonioEng/itegraflix?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/MardonioEng/itegraflix?style=for-the-badge)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/MardonioEng/itegraflix?style=for-the-badge)
+![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/MardonioEng/itegraflix?style=for-the-badge)
 
-## Available Scripts
+![Cover](./responsive_layout.png)
 
-In the project directory, you can run:
+> Uma aplicação desenvolvida em React que lista os 10 filmes mais populares da atualidade de acordo com a base de dados do [TMBD](https://www.themoviedb.org/)
 
-### `npm start`
+## 🔗Link da aplicação
+Esta aplicação está hospedada no GitHub Pages. Você consegue acessar em: <br>
+ ➡️ https://mardonioeng.github.io/itegraflix/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 📱Responsividade
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+A responsividade desta aplicação se baseia nos breakpoints padrões do Bootstrap5: <br>
 
-### `npm test`
+Para mais detalhes, acesse: https://getbootstrap.com/docs/5.0/layout/breakpoints/
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️Tecnologias utilizadas
 
-### `npm run build`
+|                      | **Versão** | **Descrição**                                                |
+| :------------------- | ---------- | ------------------------------------------------------------ |
+| **React**            | 17.0.2     | Biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web. |
+| **Typescript**       | 4.6.3      | Superset da linguagem de programação JavaScript.             |
+| **Bootstrap**        | 5.1.3      | Framework web com código-fonte aberto para desenvolvimento de componentes de interface. |
+| **Axios**            | 0.26.1     | Cliente HTTP baseado em promises para fazer requisições.     |
+| **React-router-dom** | 5.2.0      | Pacote npm que permite implementar roteamento dinâmico em aplicações web. |
+| **Gh-pages**         | 3.2.3      | Plugin utilizado para fazer o deploy de aplicações estáticas para o GitHub |
+| **Yarn**             | 1.22.17    | Sistema de gerenciamento de pacotes para JavaScript          |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Instalando o projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Depois de realizar o clone deste projeto (git clone), para instalar as dependência, use:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```shell
+yarn
+```
 
-### `npm run eject`
+Se você não tem uma *key* para consumir a API TMDB, siga as orientação disponíveis na [Documentação da API](https://developers.themoviedb.org/4/getting-started/authorization) e então crie um arquivo na raiz do projeto chamado `.env` e atualize o valor da chave `REACT_APP_API` com sua *api key*.<br>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Para iniciar a aplicação na máquina local, use:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```shell
+yarn start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Para fazer o deploy da aplicação, siga as orientações disponíveis na [Documentação do Create-react-app](https://create-react-app.dev/docs/deployment/#github-pages) e então use o seguinte comando:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```shell
+yarn deploy
+```
 
-## Learn More
+## 📘 Referências
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Esta aplicação utiliza dados públicos da API TMDB.
+  - :link: https://developers.themoviedb.org/4/getting-started
+- O mecanismo de Loading (feedback visual de carregamento dos dados) foi desenvolvido utilizando CSS3. Tomou-se como base o exemplo disponível em:
+  - :link: https://www.w3schools.com/howto/howto_css_loader.asp
