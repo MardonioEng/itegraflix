@@ -10,7 +10,7 @@
 > Uma aplicação desenvolvida em React que lista os 10 filmes mais populares da atualidade de acordo com a base de dados do [TMBD](https://www.themoviedb.org/)
 
 ## 🔗Link da aplicação
-Esta aplicação está hospedada no GitHub Pages. Você consegue acessar em: <br>
+Esta aplicação está hospedada no GitHub Pages. Você consegue acessá-la em: <br>
  ➡️ https://mardonioeng.github.io/itegraflix/
 
 ## 📱Responsividade
@@ -33,13 +33,13 @@ Para mais detalhes, acesse: https://getbootstrap.com/docs/5.0/layout/breakpoints
 
 ## 🚀 Instalando o projeto
 
-Depois de realizar o clone deste projeto (git clone), para instalar as dependência, use:
+Depois de realizar o clone deste projeto (git clone), para instalar as dependências, use:
 
 ```shell
 yarn
 ```
 
-Se você não tem uma *key* para consumir a API TMDB, siga as orientação disponíveis na [Documentação da API](https://developers.themoviedb.org/4/getting-started/authorization) e então crie um arquivo na raiz do projeto chamado `.env` e atualize o valor da chave `REACT_APP_API` com sua *api key*.<br>
+Se você não tem uma *key* para consumir a API TMDB, siga as orientações disponíveis na [Documentação da API](https://developers.themoviedb.org/4/getting-started/authorization) e então crie um arquivo na raiz do projeto chamado `.env` e atualize o valor da chave `REACT_APP_API` com sua *api key*.<br>
 
 Para iniciar a aplicação na máquina local, use:
 
